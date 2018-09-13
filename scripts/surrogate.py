@@ -84,10 +84,5 @@ class DeepUQSurrogate(object):
     def predict(self, x):
         return self.y.eval(feed_dict={self.x:x})
 
-if __name__ == '__main__':
-    surr = DeepUQSurrogate(D=100, d=2, L=3)
-    tensors = surr.tensors
-    for tensor in tensors:
-        print tensor 
-    keyboard()
+    
 
